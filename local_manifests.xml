@@ -3,27 +3,24 @@
   
   <!-- Remotes -->
   <remote name="Romeo13card" fetch="https://github.com/Romeo13card" />
- <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
- <remote name="LineageOS" fetch="https://github.com/LineageOS" />
- <remote name="ThankYouMario" fetch="https://gitlab.com/ThankYouMario" />
- <remote name="elpaablo" fetch="https://github.com/elpaablo" />
+ <remote name="Romeo13card" fetch="https://gitlab.com/Romeo13card" />
 
  <!-- Device Tree -->
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="Romeo13card" revision="lineage-23.2" />
 
   <!-- Kernel Tree -->
-  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="alternoegraha" revision="motregen" />
+  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="Romeo13card" revision="motregen" />
 
   <!-- Vendor Tree -->
-  <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="alternoegraha" revision="baklava-and-beyond" />
+  <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="Romeo13card" revision="baklava-and-beyond" />
   
   <!-- Hardware -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="LineageOS" revision="lineage-23.2" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="Romeo13card" revision="lineage-23.2" />
   
  <!-- MIUI camera-->
-  <project path="vendor/xiaomi/camera" name="vendor_xiaomi_camera" remote="ThankYouMario" revision="vauxite-sm6225" />
+  <project path="vendor/xiaomi/camera" name="vendor_xiaomi_camera" remote="Romeo13card" revision="vauxite-sm6225" />
 
 <!--ViperFX-->
- <project path=" packages/apps/ViPER4AndroidFX" name=" packages/apps/ViPER4AndroidFX" remote="elpaablo" revision="alpha-16.1" />
+ <project path=" packages/apps/ViPER4AndroidFX" name=" packages/apps/ViPER4AndroidFX" remote="Romeo13card" revision="alpha-16.1" />
 
 </manifest>
