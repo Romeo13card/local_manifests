@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-  <!-- Remotes -->
   <remote name="Romeo13card" fetch="https://github.com/Romeo13card" />
- <remote name="Romeo13card" fetch="https://gitlab.com/Romeo13card" />
-
- <!-- Device Tree -->
+   <!-- Device Tree-->
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="Romeo13card" revision="lineage-23.2" />
-
-  <!-- Kernel Tree -->
+    <!-- Prebuilt Kernel Tree-->
   <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="Romeo13card" revision="motregen" />
-
-  <!-- Vendor Tree -->
+  <!-- Vendor Tree-->
   <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="Romeo13card" revision="baklava-and-beyond" />
-  
-  <!-- Hardware -->
+    <!-- Hardware/Xiaomi-->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="Romeo13card" revision="lineage-23.2" />
-  
- <!-- MIUI camera-->
-  <project path="vendor/xiaomi/camera" name="vendor_xiaomi_camera" remote="Romeo13card" revision="vauxite-sm6225" />
-
-<!--ViperFX-->
- <project path=" packages/apps/ViPER4AndroidFX" name=" packages/apps/ViPER4AndroidFX" remote="Romeo13card" revision="alpha-16.1" />
+  <!-- MIUI Camera-->
+  <project path="vendor/xiaomi/camera" name="proprietary_vendor_xiaomi_camera" fetch="https://gitlab.com/Romeo13card" revision="vauxite-sm6225" />
+  <!-- ViPER4AndroidFX -->
+  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Romeo13card" revision="alpha-16.1" />
 </manifest>
