@@ -2,5 +2,5 @@
 <p align="center" id="description">Local_Manifests </p>
 
 ```
-git clone https://github.com/Romeo13card/local_manifests.git -b lineage .repo/local_manifests
+git clone https://github.com/Romeo13card/local_manifest.git -b lineage .repo/local_manifests
 ```
