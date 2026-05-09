@@ -22,5 +22,4 @@
 
 <!--ViperFX-->
  <project path=" packages/apps/ViPER4AndroidFX" name=" packages/apps/ViPER4AndroidFX" remote="Romeo13card" revision="alpha-16.1" />
-
 </manifest>
