@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="Romeo13card" fetch="https://github.com/Romeo13card" />
-  <remote name="Romeo13card-gl" fetch="https://gitlab.com/Romeo13card" />
+  <remote name="iDeadXS" fetch="https://github.com/iDeadXS" />
+  <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
 
-  <!-- Device Tree-->
-  <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="Romeo13card" revision="matrixx-16.2" />
-  <!-- Prebuilt Kernel Tree-->
-  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="Romeo13card" revision="motregen" />
-  <!-- Vendor Tree-->
+  <!-- Device Tree -->
+  <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="Romeo13card" revision="lineage-23.2" />
+  
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="iDeadXS" revision="lineage-23.2" />
+  
+  <!-- DolbyUI -->
+  <project path="packages/apps/DolbyUI" name="packages_apps_DolbyUI" remote="swiitch-OFF-Lab" revision="16.0" />
+  
+  <!-- Dolby Hardware -->
+  <project path="hardware/dolby" name="hardware_dolby" remote="swiitch-OFF-Lab" revision="sony-1.5" />
+  
+  <!-- Prebuilt Kernel Tree  -->
+  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="alternoegraha" revision="motregen" />
+  
+  <!-- Vendor Tree -->
   <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="Romeo13card" revision="baklava-and-beyond" />
-  <!-- MIUI Camera-->
-  <project path="vendor/xiaomi/camera" name="proprietary_vendor_xiaomi_camera" remote="Romeo13card-gl" revision="vauxite-sm6225" />
-   </manifest>
+  
+  <!-- MIUI Camera -->
+  <project path="vendor/xiaomi/camera" name="vendor/xiaomi/camera" remote="Romeo13card-gl" revision="vauxite-sm6225" />
+</manifest>
