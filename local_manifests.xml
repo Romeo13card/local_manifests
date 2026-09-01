@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="Romeo13card" fetch="https://github.com/Romeo13card" />
+  <remote name="Romeo13card-gl" fetch="https://gitlab.com/Romeo13card" />
   <remote name="iDeadXS" fetch="https://github.com/iDeadXS" />
   <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
+  <remote name="swiitch-OFF-Lab" fetch="https://github.com/swiitch-OFF-Lab" />
 
   <!-- Device Tree -->
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="Romeo13card" revision="lineage-23.2" />
@@ -16,7 +18,7 @@
   <!-- Dolby Hardware -->
   <project path="hardware/dolby" name="hardware_dolby" remote="swiitch-OFF-Lab" revision="sony-1.5" />
   
-  <!-- Prebuilt Kernel Tree  -->
+  <!-- Prebuilt Kernel Tree -->
   <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="alternoegraha" revision="motregen" />
   
   <!-- Vendor Tree -->
