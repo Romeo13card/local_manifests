@@ -3,9 +3,9 @@
   <!-- Shared LineageOS 24.0 manifest for Redmi 10C (fog) and Redmi Pad SE (xun). All local overrides are pinned to reviewed published revisions. -->
   <remote name="decoder-dev" fetch="https://github.com/decoder-dev" />
   <remote name="xun-development" fetch="https://github.com/Xun-Development" />
+
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="decoder-dev" revision="4347bbd4ccfae85228c406829f0c82b1efd94e33" upstream="refs/heads/fog-fixes" />
   <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="decoder-dev" revision="93f5caf5e2d743d4c5eff5e2af13e2e0e0c9def7" upstream="refs/heads/fog-fixes" clone-depth="1" />
   <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="decoder-dev" revision="d12c019a3f5ef426972bdcb045cfa42cfb1625b5" upstream="refs/heads/fog-fixes" clone-depth="1" />
   <project path="hardware/dolby" name="hardware_dolby" remote="decoder-dev" revision="b7c92b9e9e8005a5ef8ce8d0f5ef75d6f125aa9e" upstream="refs/heads/fog-fixes" />
-     </project>
- </manifest>
+</manifest>
