@@ -3,45 +3,9 @@
   <!-- Shared LineageOS 24.0 manifest for Redmi 10C (fog) and Redmi Pad SE (xun). All local overrides are pinned to reviewed published revisions. -->
   <remote name="decoder-dev" fetch="https://github.com/decoder-dev" />
   <remote name="xun-development" fetch="https://github.com/Xun-Development" />
-  <remove-project name="LineageOS/android_frameworks_av" />
-  <remove-project name="LineageOS/android_packages_apps_Settings" />
-  <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
-  <remove-project name="LineageOS/android_frameworks_base" />
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="decoder-dev" revision="4347bbd4ccfae85228c406829f0c82b1efd94e33" upstream="refs/heads/fog-fixes" />
   <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="decoder-dev" revision="93f5caf5e2d743d4c5eff5e2af13e2e0e0c9def7" upstream="refs/heads/fog-fixes" clone-depth="1" />
   <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="decoder-dev" revision="d12c019a3f5ef426972bdcb045cfa42cfb1625b5" upstream="refs/heads/fog-fixes" clone-depth="1" />
   <project path="hardware/dolby" name="hardware_dolby" remote="decoder-dev" revision="b7c92b9e9e8005a5ef8ce8d0f5ef75d6f125aa9e" upstream="refs/heads/fog-fixes" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="xun-development" revision="2b4b0b551df1a9b9ea6b4628af3b52c634c35a5d" upstream="refs/heads/lineage-24.0-xun" groups="pdk,sysui-studio" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="xun-development" revision="97a3e2bc0048f82637f13bc9f6a8ec7c97335c15" upstream="refs/heads/lineage-24.0-xun" groups="pdk-cw-tvc,pdk-fs,sysui-studio" />
-  <project path="device/xiaomi/xun" name="device_xiaomi_xun" remote="xun-development" revision="e8d0628a73cb2d610783a20161e173e2d5c3ec99" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="device/xiaomi/xun-kernel" name="device_xiaomi_xun-kernel" remote="xun-development" revision="c46837a626fb489d695013f423601b6c268d5731" clone-depth="1" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="vendor/xiaomi/xun" name="vendor_xiaomi_xun" remote="xun-development" revision="5f405b1d67206fa136163ec822e6ffc8eb591f28" clone-depth="1" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="xun-development" revision="6c12251713d74a01636482c9ffbdd9943addbfbf" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="packages/apps/DolbyAtmos" name="android_packages_apps_DolbyAtmos" remote="xun-development" revision="41cadfcc9660b601bccc3a696bca535444873213" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="xun-development" revision="8aa1bb4889f874194f54392c19563f2b5d3ddbd9" upstream="refs/heads/lineage-24.0-xun">
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450-6.6/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8850/Android.bp" />
-  </project>
-  <project path="hardware/qcom-caf/sm6225/audio/agm" name="android_vendor_qcom_opensource_agm" groups="qcom" remote="xun-development" revision="0994e9e38fab32ffd884ad86e3ebd5c49c1139db" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/sm6225/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" groups="qcom" remote="xun-development" revision="1d2e82222dbc35b9b2cff966281cd2b7a26d081a" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/sm6225/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" groups="qcom" remote="xun-development" revision="e9d7a93cdffdf64f3ecd2a0dc8834c22521f6c9a" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="android_hardware_qcom_audio-ar" groups="qcom" remote="xun-development" revision="9a14fc9162c0295239dc0a583feb2c4f63dc6dc7" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom" remote="xun-development" revision="508824715ee8d3f98d87f4d066a89016324d963f" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/sm6225/dataipa" name="android_vendor_qcom_opensource_dataipa" groups="qcom" remote="xun-development" revision="a964339653ed78a7638b391487aa63b932ce80b6" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" groups="qcom" remote="xun-development" revision="e09b41c709cb5e9916d767941d35c89cd3809566" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="packages/apps/FaceUnlock" name="platform_packages_apps_FaceUnlock" remote="xun-development" revision="ea3714d76796b51fb8d42fcd6748a522a7444dd5" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="external/yifan" name="platform_external_yifan" remote="xun-development" revision="b3996763c3f4bea151c52fa49a4ced2b7f4e26b8" clone-depth="1" upstream="refs/heads/lineage-24.0-xun" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="xun-development" revision="17c1a36bd4d76764099bd768de5dc14c5e5ac027" upstream="refs/heads/lineage-24.0-xun" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
-</manifest>
+     </project>
+ </manifest>
